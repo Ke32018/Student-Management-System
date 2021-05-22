@@ -39,7 +39,7 @@
                 <tr  width="120px;">
                     <td>姓名<span style="color:red">*</span>：</td>
                     <td>
-						<input type="text"  name="stuName" value="杨XX" />
+						<input type="text"  name="stuName" value="" />
 					</td>
                 </tr>
               
@@ -56,7 +56,7 @@
                 <tr>
                     <td>性别<span style="color:red">*</span>：</td>
                     <td>
-                        <input type="radio" name="sex" checked value="1" />男 <input type="radio" name="gender" value="0"/>女
+                        <input type="radio" name="sex" checked value="1" />男 <input type="radio" name="sex" value="0"/>女
                     </td>
                 </tr>
 
@@ -64,47 +64,47 @@
 				<tr>
                     <td>EMAIL：</td>
                     <td>
-                        <input type="text" name="email" value="1332@126.com" />
+                        <input type="text" name="email" value="" />
                     </td>                
                 </tr>
 
 				<tr>
                     <td>联系电话：</td>
                     <td>
-                        <input type="text" name="phone" value="13333333333" />
+                        <input type="text" name="phone" value="" />
                     </td>                
                 </tr>
 
 				<tr>
                     <td>户口所在地：</td>
                     <td>
-                        <input type="text" name="registered" value="北京"  />
+                        <input type="text" name="registered" value=""  />
                     </td>                
                 </tr>
 
 				<tr>
                     <td>住址：</td>
                     <td>
-                        <input type="text" name="address" value="朝阳" />
+                        <input type="text" name="address" value="" />
                     </td>                
                 </tr>
 				<tr>
                     <td>政治面貌：</td>
                     <td>
-                        <input type="text" name="politics" value="党员" />
+                        <input type="text" name="politics" value="" />
                     </td>                
                 </tr>
 				<tr>
                     <td>身份证号：</td>
                     <td>
-                        <input type="text" name="idNumber" value="110111111111111111111" />
+                        <input type="text" name="idNumber" value="" />
                     </td>                
                 </tr>
 				
 				<tr>
                     <td>专业：</td>
                     <td>
-                        <input type="text" name="profession" value="java" />
+                        <input type="text" name="profession" value="" />
                     </td>                
                 </tr>
 					
@@ -112,7 +112,7 @@
 				<tr>
                     <td>简介<span style="color:red">*</span>：</td>
                     <td>
-                        <textarea name="introdction">一个新开辟领域的探讨，探讨摸索</textarea>
+                        <textarea name="introdction"></textarea>
                     </td>
                 </tr>
 				<tr>
