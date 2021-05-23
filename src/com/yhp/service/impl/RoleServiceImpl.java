@@ -33,6 +33,21 @@ public class RoleServiceImpl implements RoleService {
     }
 
     @Override
+    public int delete(int id) {
+        middleDao.deleteMiddle(id);
+        int delete = roleDao.delete(id);
+        return delete;
+    }
+
+    @Override
+    public int update(Role role,String[] menuids) {
+        int update = roleDao.update(role);
+        middleDao.deleteMiddle(role.getRoleId());
+        middleDao.insertMiddle(role.getRoleId(), menuids);
+        return update;
+    }
+
+    @Override
     public List<Role> getRoleList() {
         return roleDao.getRoleList();
     }
@@ -47,4 +62,15 @@ public class RoleServiceImpl implements RoleService {
         return roleDao.total();
     }
 
+    @Override
+    public List<Integer> findMenuListById(int roleId) {
+        //获取role的menuid
+        return roleDao.findMenuListById(roleId);
+    }
+
+    @Override
+    public Role findById(int roleId) {
+        //获取role信息
+        return roleDao.findById(roleId);
+    }
 }

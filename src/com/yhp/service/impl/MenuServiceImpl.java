@@ -9,9 +9,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MenuServiceImpl implements MenuService {
+    MenuDao menuDao = new MenuDaoImpl();
+
+    @Override
+    public List<Menu> getMenuList(int index, int size) {
+        return menuDao.getMenuList();
+    }
+
+    @Override
+    public int total() {
+        return menuDao.total();
+    }
+
     @Override
     public List<Menu> getMenuList() {
-        MenuDao menuDao = new MenuDaoImpl();
         List<Menu> menuList = menuDao.getMenuList();
         List<Menu> newList = new ArrayList<>();
         for (Menu m : menuList) {

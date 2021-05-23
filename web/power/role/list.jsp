@@ -77,14 +77,16 @@
                 <td>&nbsp;
                     <a href="javascript:alert('操作成功！');">启用</a>
                     <a href="info.html">详情</a>
-                    <a href="edit.html">修改</a>
-                    <a href="javascript:void(0)" onclick="del();return false" class="tablelink"> 删除</a>
+                    <a href="roles?method=findbyid&roleid=${role.roleId}">修改</a>
+                    <a href="roles?method=delete&roleid=${role.roleId}" onclick="del()" class="tablelink"> 删除</a>
                 </td>
             </tr>
         </c:forEach>
 
         </tbody>
     </table>
+
+
 
     <div class='MainStyle'>
         <div class=''><a href="roles?method=select" target='_self'>首页</a>
